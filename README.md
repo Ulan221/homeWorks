@@ -1,4 +1,4 @@
 Этот репозиторий предназначен для выполнения домашних заданий в рамках обучения на платформе Ylab.
 
-(Дз #1)  homework_1  https://github.com/Ulan221/homeWorks/pull/1
+(Дз #1)  https://github.com/Ulan221/homeWorks/pull/1
 
