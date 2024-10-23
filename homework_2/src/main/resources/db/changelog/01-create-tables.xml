@@ -6,7 +6,9 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
 
     <changeSet id="1" author="ulan">
-
+        <sql>
+            CREATE SCHEMA habit_tracker_schema AUTHORIZATION ulan;
+        </sql>
     </changeSet>
 
     <changeSet id="2" author="ulan">
@@ -76,4 +78,5 @@
             <column name="date"/>
         </createIndex>
     </changeSet>
+
 </databaseChangeLog>

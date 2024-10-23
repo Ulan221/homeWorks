@@ -18,7 +18,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void save(User user) {
-        String sql = "INSERT INTO habit_tracker_schema.users (id, name, email, password) VALUES (nextval('user_id_seq'), ?, ?, ?) RETURNING id";
+        String sql = "INSERT INTO habit_tracker_schema.users (id, name, email, password) VALUES (nextval('habit_tracker_schema.users_id_seq'), ?, ?, ?) RETURNING id";
 
         try (Connection connection = databaseConnection.getConnection()) {
             if (connection == null) {

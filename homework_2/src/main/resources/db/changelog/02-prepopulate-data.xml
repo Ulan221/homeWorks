@@ -3,7 +3,7 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
 
     <changeSet id="1" author="ulan">
         <insert tableName="users" schemaName="habit_tracker_schema">
@@ -11,12 +11,7 @@
             <column name="password" value="111111"/>
             <column name="email" value="ulan@example.com"/>
         </insert>
-
-        <insert tableName="habit" schemaName="habit_tracker_schema">
-            <column name="name" value="Morning Run"/>
-            <column name="description" value="Run every morning at 7 AM"/>
-            <column name="created_date" valueDate="2024-10-01"/>
-            <column name="user_id" value="1"/>
-        </insert>
     </changeSet>
+
+
 </databaseChangeLog>

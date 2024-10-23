@@ -36,7 +36,7 @@ public class HabitRepositoryImpl implements HabitRepository {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
     }
 
@@ -52,7 +52,7 @@ public class HabitRepositoryImpl implements HabitRepository {
             statement.setLong(4, habit.getId());
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
     }
 
@@ -81,7 +81,7 @@ public class HabitRepositoryImpl implements HabitRepository {
                 habit = mapResultSetToHabit(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
         return habit;
     }
@@ -101,7 +101,7 @@ public class HabitRepositoryImpl implements HabitRepository {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
         return habits;
     }
@@ -125,7 +125,7 @@ public class HabitRepositoryImpl implements HabitRepository {
             statement.setDate(2, Date.valueOf(date));
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
     }
 
@@ -151,7 +151,7 @@ public class HabitRepositoryImpl implements HabitRepository {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace(); // Можно заменить на логирование или выбросить новое исключение
+            e.printStackTrace();
         }
 
         return streak;

@@ -108,7 +108,7 @@ public class UserService {
                 break;
             case 2:
                 showUsers();
-                int userIndex = ConsoleUI.promptInt("Введите номер пользователя для удаления: ") - 1;
+                int userIndex = ConsoleUI.promptInt("Введите номер пользователя для удаления: ");
                 deleteUser(userIndex);
                 habitService.pauseWithEnter();
                 break;
@@ -178,7 +178,7 @@ public class UserService {
 
     public void deleteAccount(User user) {
         userRepository.deleteById(user.getId());
-        System.out.println("Ваш аккауни удален");
+        System.out.println("Ваш аккаунт удален");
     }
 
     public void showUserMenu(User user) {

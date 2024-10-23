@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- Lombok dependency -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -81,7 +80,7 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
-            <version>1.19.0</version>
+            <version>1.20.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -95,7 +94,6 @@
                 <version>4.29.2</version>
                 <configuration>
                     <propertyFile>src/main/resources/application.properties</propertyFile>
-                    <changeLogFile>src/main/resources/main-changelog.xml</changeLogFile>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,6 +1,8 @@
 package org.example.database;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.IOException;
@@ -12,15 +14,17 @@ import java.util.Properties;
 
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class DatabaseConnection {
 
     private String url;
     private String username;
     private String password;
 
-    public DatabaseConnection() {
-        loadProperties();
-    }
+
+
+
 
 
     private void loadProperties() {
